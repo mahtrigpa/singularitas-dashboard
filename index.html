@@ -1,1 +1,218 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singularitas // Empirical Research Initiative</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --surface-color: #0d0d0d;
+            --border-color: #1a1a1a;
+            --accent-green: #00ff66;
+            --accent-cyan: #00f0ff;
+            --text-primary: #ffffff;
+            --text-secondary: #8c8c8c;
+            --warning-amber: #ffaa00;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Space Grotesk', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .code-font {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        /* Banner de Transparencia Obligatorio */
+        .notice-banner {
+            background-color: #120e05;
+            border-bottom: 1px solid var(--warning-amber);
+            color: var(--warning-amber);
+            padding: 12px 20px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.85rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--text-primary);
+        }
+
+        .logo span {
+            color: var(--accent-green);
+        }
+
+        .badge {
+            background: rgba(0, 255, 102, 0.1);
+            border: 1px solid var(--accent-green);
+            color: var(--accent-green);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero {
+            max-width: 900px;
+            margin: 100px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            background: transparent;
+            border: 1px solid var(--accent-cyan);
+            color: var(--accent-cyan);
+            padding: 14px 28px;
+            font-family: 'Roboto Mono', monospace;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: rgba(0, 240, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+        }
+
+        .grid-section {
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            border-radius: 4px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            max-width: 1200px;
+            margin: 150px auto 50px auto;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .disclaimer-text {
+            margin-top: 20px;
+            font-size: 0.75rem;
+            line-height: 1.5;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 1px dashed var(--border-color);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Aviso Superior de Transparencia Ética -->
+    <div class="notice-banner">
+        [ PROJECT STATUS: INDEPENDENT THEORETICAL ARCHITECTURE DESIGN & CONCEPTUAL SIMULATION ]
+    </div>
+
+    <header>
+        <div class="logo class="code-font"">SINGULARITAS<span>//</span></div>
+        <div class="badge class="code-font"">Fase Conceptual</div>
+    </header>
+
+    <section class="hero">
+        <h1 class="code-font">The Trust Layer for Autonomous AI Compute Coordination</h1>
+        <p>Una iniciativa de investigación dedicada al diseño de protocolos de telemetría y middleware distribuido para la validación determinista de workloads en sistemas multi-agente heterogéneos.</p>
+        <a href="https://github.io" class="btn">Review Simulation Framework</a>
+    </section>
+
+    <section class="grid-section">
+        <div class="card">
+            <h3 class="code-font" style="color: var(--accent-green);">01 // Nexus Verification</h3>
+            <p>Diseño teórico de un modelo de oráculo centrado en la intercepción criptográfica de trazas de ejecución en la capa del contenedor, mitigando de forma algorítmica fallas operativas y optimizando la consistencia de los tensores.</p>
+        </div>
+        <div class="card">
+            <h3 class="code-font" style="color: var(--accent-cyan);">02 // Compute Unit (CU)</h3>
+            <p>Propuesta matemática para la estandarización de recursos de hardware. Establece una línea base equivalente a 60 minutos de procesamiento continuo y determinista sobre clústeres optimizados de inferencia masiva.</p>
+        </div>
+        <div class="card">
+            <h3 class="code-font" style="color: var(--warning-amber);">03 // Fleet Densification</h3>
+            <p>Algoritmos analíticos orientados al empaquetamiento de alta densidad (bin packing) y fraccionamiento dinámico, proyectando un salto de eficiencia teórica en la utilización de flotas globales del 50% al 92.4%.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p class="code-font">&copy; 2026 Singularitas Empirical Research Initiative. All Rights Reserved.</p>
+        <!-- Deslinde Oficial Exigido por Estándares de Diligencia -->
+        <div class="disclaimer-text class="code-font"">
+            <strong>CRITICAL REGULATORY DISCLAIMER:</strong> Singularitas is an independent computer science research initiative. All interfaces, metric baselines, and architectural workflows are developed strictly for theoretical modeling, benchmark visualization, and conceptual proof-of-concept validation. This project has no commercial operational networks active. This initiative is entirely independent and is not affiliated with, sponsored by, authorized by, or in any way officially connected to NVIDIA Corporation or any of its subsidiaries.
+        </div>
+    </footer>
+
+</body>
+</html>
